@@ -12,11 +12,11 @@ export default function Footer() {
             RecodeQR is the easiest way to create QR codes you can track and edit<br /> anytime.
           </p>
         </div>
-        <div className="text-center">
-          <button className="bg-white text-blue-600 font-medium px-6 py-3 rounded-lg hover:bg-blue-50 transition-colors">
+        <div className="text-center mr-24">
+          <button className="bg-[#3A86FF] text-white text-[16px] font-normal px-8 py-3 rounded-lg tracking-wider leading-none text-center font-poppins">
             Signup free
           </button>
-          <p className="text-white/80 text-sm mt-2">
+          <p className="text-[#4B5563] text-[14px] mt-2">
             Free 14-day trial. No credit<br />card required.
           </p>
         </div>
@@ -122,7 +122,7 @@ export default function Footer() {
             <p className="text-[#1E2833] mb-6 text-[15px]">
               Made in Munich, hosted in the EU
             </p>
-            <button className="bg-blue-500 text-white font-medium px-6 py-2 rounded-lg hover:bg-blue-600 transition-colors">
+            <button className="bg-[#3A86FF] text-white text-[16px] font-normal px-8 py-3 rounded-lg tracking-wider leading-none text-center font-poppins">
               Signup for free
             </button>
           </div>

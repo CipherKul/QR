@@ -44,7 +44,7 @@ const MidSection = () => {
           </p>
 
           {/* Generate Button */}
-          <button className="mt-8 bg-[#3A86FF] text-white py-3 px-6 rounded-lg">
+          <button className="bg-[#3A86FF] text-white text-[16px] font-normal px-8 py-4 rounded-lg tracking-wider leading-none text-center font-poppins mt-8">
             Generate QR Code
           </button>
           <p className="text-gray-500 text-sm mt-2">Static codes are free. No<br /> sign up required.</p>
@@ -245,7 +245,7 @@ const MidSection = () => {
 
         {/* CTA Button */}
         <div className="text-center">
-          <button className="bg-[#3A86FF] text-white font-medium px-8 py-3 rounded-lg shadow-md transition-colors">
+          <button className="bg-[#3A86FF] text-white text-[16px] font-normal px-8 py-4 rounded-lg tracking-wider leading-none text-center font-poppins">
             Try dynamic for free
           </button>
           <p className="text-[16px] text-gray-600 mt-3">
