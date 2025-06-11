@@ -15,8 +15,8 @@ export default function Navbar() {
 
         {/* Center Links */}
         <ul className="hidden md:flex gap-16 text-[#1F2937] font-medium text-[18px]">
-          <li><Link href="#">Features</Link></li>
-          <li><Link href="#">Pricing</Link></li>
+          <li><Link href="/">Features</Link></li>
+          <li><Link href="/pricing">Pricing</Link></li>
           <li><Link href="#">FAQ</Link></li>
         </ul>
 
