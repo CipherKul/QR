@@ -32,9 +32,12 @@ export default function PricingPage() {
 
         {/* Pricing Toggle */}
         <div className="flex justify-center items-center gap-4 mb-10">
-          <span className="text-blue-600 text-sm font-medium">Save 15% on yearly plan!</span>
+          <p>
+            <span className="text-[#3A86FF] font-semibold">Save 15%</span>
+            <span className="text-[#3A86FF]"> on yearly plan!</span>
+          </p>
           <div className="flex rounded-full bg-gray-100 p-1">
-            <button className="py-2 px-6 rounded-full bg-blue-600 text-white font-medium">Yearly</button>
+            <button className="py-2 px-6 rounded-full bg-[#3A86FF] text-white font-medium">Yearly</button>
             <button className="py-2 px-6 rounded-full text-gray-600 font-medium">Monthly</button>
           </div>
         </div>
@@ -51,7 +54,7 @@ export default function PricingPage() {
               <span className="text-4xl font-bold">$0</span>
               <span className="text-gray-500">/month</span>
             </div>
-            <button className="w-full bg-blue-500 text-white py-3 rounded-md font-medium mb-6">
+            <button className="w-full bg-[#3A86FF] text-white py-3 rounded-md font-medium mb-6">
               Get started
             </button>
             <div>
@@ -112,7 +115,7 @@ export default function PricingPage() {
               <span className="text-4xl font-bold">$0</span>
               <span className="text-gray-500">/month</span>
             </div>
-            <button className="w-full bg-blue-500 text-white py-3 rounded-md font-medium mb-6">
+            <button className="w-full bg-[#3A86FF] text-white py-3 rounded-md font-medium mb-6">
               Get started
             </button>
             <div>
@@ -144,8 +147,8 @@ export default function PricingPage() {
           </div>
 
           {/* Most Popular Plan */}
-          <div className="bg-white rounded-lg border-2 border-blue-500 p-6 relative">
-            <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white px-4 py-1 rounded-full flex items-center text-sm font-medium">
+          <div className="bg-white rounded-lg border-2 border-[#3A86FF] p-6 relative">
+            <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-[#3A86FF] text-white px-4 py-1 rounded-full flex items-center text-sm font-medium">
               Most Popular <span className="ml-1">⭐</span>
             </div>
             <div className="mb-6">
