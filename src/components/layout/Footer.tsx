@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Footer() {
@@ -5,7 +6,7 @@ export default function Footer() {
     <footer className="mt-24">
       {/* CTA Banner */}
       <div className="max-w-[1420px] mx-auto cta-panel rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between mb-16">
-        <div className="text-left mb-6 md:mb-0 p-4">
+        <div className="text-left mb-6 md:mb-0 p-4 ml-24">
           <h2 className="text-2xl md:text-[38px] font-bold text-[#1F2937] mb-2">Ready to create your QR code?</h2>
           <p className="text-[#4B5563] text-[18px]">
             RecodeQR is the easiest way to create QR codes you can track and edit<br /> anytime.
@@ -24,14 +25,14 @@ export default function Footer() {
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4">
         {/* Footer Links Section */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-5 mb-16">
           {/* Generate QR codes section */}
           <div>
-            <h3 className="text-blue-500 font-medium mb-4">Generate QR codes for</h3>
-            <ul className="space-y-2">
+            <h3 className="text-[#3A86FF] font-medium mb-4">Generate QR codes for</h3>
+            <ul className="space-y-2 text-[15px]">
               {['Amazon wishlist', 'Business website', 'Crypto', 'Discord', 'Email', 'Event', 'Eventbrite', 'Facebook', 'Feedback Form'].map((item) => (
                 <li key={item}>
-                  <Link href="#" className="text-gray-600 hover:text-blue-500 transition-colors">
+                  <Link href="#" className="text-[#1E2833] hover:text-blue-500 transition-colors">
                     {item}
                   </Link>
                 </li>
@@ -42,10 +43,10 @@ export default function Footer() {
           {/* Second column */}
           <div>
             <h3 className="text-blue-500 font-medium mb-4 opacity-0">Generate QR codes for</h3>
-            <ul className="space-y-2">
+            <ul className="space-y-2 text-[15px]">
               {['Github', 'Google Drive', 'Google Form', 'Google Maps', 'Google Review', 'Instagram', 'Link', 'LinkedIn', 'MeCard'].map((item) => (
                 <li key={item}>
-                  <Link href="#" className="text-gray-600 hover:text-blue-500 transition-colors">
+                  <Link href="#" className="text-[#1E2833] hover:text-blue-500 transition-colors">
                     {item}
                   </Link>
                 </li>
@@ -56,10 +57,10 @@ export default function Footer() {
           {/* Third column */}
           <div>
             <h3 className="text-blue-500 font-medium mb-4 opacity-0">Generate QR codes for</h3>
-            <ul className="space-y-2">
+            <ul className="space-y-2 text-[15px]">
               {['PDF', 'Pay Pal', 'Phone', 'Pinterest', 'Random', 'Real estate sign', 'Reddit', 'SMS', 'Telegram'].map((item) => (
                 <li key={item}>
-                  <Link href="#" className="text-gray-600 hover:text-blue-500 transition-colors">
+                  <Link href="#" className="text-[#1E2833] hover:text-blue-500 transition-colors">
                     {item}
                   </Link>
                 </li>
@@ -68,25 +69,23 @@ export default function Footer() {
           </div>
 
           {/* Fourth column */}
-          <div className="grid grid-cols-2 gap-x-8">
-            {/* Left subcolumn */}
-            <div>
-              <h3 className="text-blue-500 font-medium mb-4 opacity-0">Generate QR codes for</h3>
-              <ul className="space-y-2">
-                {['Text', 'Tik Tock', 'Twitter', 'Wedding album', 'Wedding RSVP', 'Whatsapp', 'Wifi', 'Youtube', 'V Card'].map((item) => (
-                  <li key={item}>
-                    <Link href="#" className="text-gray-600 hover:text-blue-500 transition-colors">
-                      {item}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
+          <div>
+            <h3 className="text-blue-500 font-medium mb-4 opacity-0">Generate QR codes for</h3>
+            <ul className="space-y-2 text-[15px]">
+              {['Text', 'Tik Tock', 'Twitter', 'Wedding album', 'Wedding RSVP', 'Whatsapp', 'Wifi', 'Youtube', 'V Card'].map((item) => (
+                <li key={item}>
+                  <Link href="#" className="text-[#1E2833] hover:text-blue-500 transition-colors">
+                    {item}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="grid grid-cols-1 gap-x-8">
             {/* Right subcolumn (Reference) */}
             <div>
               <h3 className="text-blue-500 font-medium mb-4">Reference</h3>
-              <ul className="space-y-2">
+              <ul className="space-y-2 text-[15px]">
                 {[
                   'QR codes explained',
                   'How many unique QR codes are there?',
@@ -96,7 +95,7 @@ export default function Footer() {
                   'Create QR codes in Google Sheets'
                 ].map((item) => (
                   <li key={item}>
-                    <Link href="#" className="text-gray-600 hover:text-blue-500 transition-colors">
+                    <Link href="#" className=" hover:text-blue-500 transition-colors">
                       {item}
                     </Link>
                   </li>
@@ -107,20 +106,20 @@ export default function Footer() {
         </div>
 
         {/* Bottom Footer Section */}
-        <div className="border-t border-gray-200 pt-12 pb-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="border-t border-gray-200 pt-12 pb-8 grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Logo and Description */}
           <div>
             <div className="mb-4">
               {/* Logo placeholder - you'll add this */}
-              <div className="w-32 h-10 bg-transparent flex items-center">
-                {/* Place for your QrCode Creator logo */}
-                <span className="text-blue-600 font-bold">QrCode Creator</span>
+              <div className="flex items-center gap-2">
+                <Image src="/nav-logo.svg" alt="Logo" width={24} height={24} />
+                <span className="text-[#3A86FF] font-semibold text-lg">QrCode Creator</span>
               </div>
             </div>
-            <p className="text-gray-600 mb-4">
-              RecodeQR is the easiest way to create QR codes you can track and edit anytime - even after printing or sharing.
+            <p className="text-[#1E2833] mb-4 text-[15px]">
+              RecodeQR is the easiest way to <br />create QR codes you can track and<br /> edit anytime - even after printing or<br /> sharing.
             </p>
-            <p className="text-gray-600 mb-6">
+            <p className="text-[#1E2833] mb-6 text-[15px]">
               Made in Munich, hosted in the EU
             </p>
             <button className="bg-blue-500 text-white font-medium px-6 py-2 rounded-lg hover:bg-blue-600 transition-colors">
@@ -128,29 +127,28 @@ export default function Footer() {
             </button>
           </div>
 
-          {/* Products Column */}
-          <div>
-            <h3 className="text-blue-500 font-medium mb-4">Products</h3>
-            <ul className="space-y-2">
-              {['Features', 'Usecase', 'Pricing', 'FAQs'].map((item) => (
-                <li key={item}>
-                  <Link href="#" className="text-gray-600 hover:text-blue-500 transition-colors">
-                    {item}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
           {/* Help & Tools Columns */}
-          <div className="grid grid-cols-2 gap-x-8">
+          <div className="grid grid-cols-3 ">
+            {/* Products Column */}
+            <div>
+              <h3 className="text-blue-500 font-medium mb-4">Products</h3>
+              <ul className="space-y-2 text-[15px]">
+                {['Features', 'Usecase', 'Pricing', 'FAQs'].map((item) => (
+                  <li key={item}>
+                    <Link href="#" className="text-[#1E2833] hover:text-blue-500 transition-colors">
+                      {item}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
             {/* Help and Legal */}
             <div>
               <h3 className="text-blue-500 font-medium mb-4">Helps and Legal</h3>
-              <ul className="space-y-2">
+              <ul className="space-y-2 text-[15px]">
                 {['Terms and Condition', 'Privacy policy', 'Legal Notice', 'Help', 'Support'].map((item) => (
                   <li key={item}>
-                    <Link href="#" className="text-gray-600 hover:text-blue-500 transition-colors">
+                    <Link href="#" className="text-[#1E2833] hover:text-blue-500 transition-colors">
                       {item}
                     </Link>
                   </li>
@@ -161,10 +159,10 @@ export default function Footer() {
             {/* Free tools */}
             <div>
               <h3 className="text-blue-500 font-medium mb-4">Free tools</h3>
-              <ul className="space-y-2">
+              <ul className="space-y-2 text-[15px]">
                 {['QR Code Generator', 'QR Code scanner'].map((item) => (
                   <li key={item}>
-                    <Link href="#" className="text-gray-600 hover:text-blue-500 transition-colors">
+                    <Link href="#" className="text-[#1E2833] hover:text-blue-500 transition-colors">
                       {item}
                     </Link>
                   </li>
