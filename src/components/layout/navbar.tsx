@@ -9,7 +9,7 @@ export default function Navbar() {
       <nav className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Left Logo and Brand */}
         <div className="flex items-center gap-2">
-          <Image src="/nav-logo.svg" alt="Logo" width={24} height={24} />  
+          <Image src="/nav-logo.svg" alt="Logo" width={24} height={24} />
           <span className="text-[#3A86FF] font-semibold text-lg">QrCode Creator</span>
         </div>
 

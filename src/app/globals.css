@@ -26,3 +26,47 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Custom utility left for blurred panel with inner & outer shadows */
+.custom-blur-panel-left {
+  background-image: linear-gradient(to left, #3A86FF, #FFFFFF, #3A86FF), url('/images/left-angle.svg');
+  background-blend-mode: overlay;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right center;
+  backdrop-filter: blur(100px);
+  box-shadow:
+    2px 2px 8.4px rgba(0, 0, 0, 0.25),        /* Drop shadow */
+    inset 0px 98px 100px rgba(172, 198, 255, 0.3),
+    inset 0px 4px 18px rgba(146, 168, 210, 0.3),
+    inset 0px 1px 40px rgba(222, 232, 255, 0.2);
+}
+
+/* Custom utility right for blurred panel with inner & outer shadows */
+.custom-blur-panel-right {
+  background-image: linear-gradient(to left, #3A86FF, #FFFFFF, #3A86FF), url('/images/right-angle.svg');
+  background-blend-mode: overlay;
+  background-size: contain;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(100px);
+  box-shadow:
+    2px 2px 8.4px rgba(0, 0, 0, 0.25),        /* Drop shadow */
+    inset 0px 98px 100px rgba(172, 198, 255, 0.3),
+    inset 0px 4px 18px rgba(146, 168, 210, 0.3),
+    inset 0px 1px 40px rgba(222, 232, 255, 0.2);
+}
+
+/* CTA Banner for blurred panel with inner & outer shadows */
+.cta-panel {
+  background-image: linear-gradient(to left, #3A86FF, #FFFFFF, #3A86FF), url('/images/left-angle.svg');
+  background-blend-mode: overlay;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right center;
+  backdrop-filter: blur(100px);
+  box-shadow:
+    2px 2px 8.4px rgba(0, 0, 0, 0.25),        /* Drop shadow */
+    inset 0px 98px 100px rgba(172, 198, 255, 0.3),
+    inset 0px 4px 18px rgba(146, 168, 210, 0.3),
+    inset 0px 1px 40px rgba(222, 232, 255, 0.2);
+}

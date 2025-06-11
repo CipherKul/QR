@@ -12,7 +12,7 @@ const MidSection = () => {
       </section>
 
       {/* Three-Step Process */}
-      <section className="mt-12 grid grid-cols-1 md:grid-cols-3 text-center gap-10">
+      <section className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-0 text-center px-24">
         <div>
           <Image
             src="/images/qrtype.png"
@@ -67,7 +67,7 @@ const MidSection = () => {
       </section>
 
       {/* Static vs Dynamic QR Codes Section */}
-      <section className="bg-[#ECF3FF] py-16 px-6 md:px-12 rounded-3xl mt-24 w-full max-w-[calc(100%+2rem)] -mx-4 md:max-w-[calc(100%+4rem)] md:-mx-8">
+      <section className="bg-[#ECF3FF] py-12 mt-16 rounded-3xl relative overflow-hidden">
         <div className="max-w-4xl mx-auto text-center mb-12">
           <h2 className="text-2xl md:text-4xl font-bold mb-3 text-[#1F2937]">
             Should I pick static or dynamic QR codes?
@@ -79,14 +79,7 @@ const MidSection = () => {
 
         <div className="flex flex-col md:flex-row justify-center gap-8 mb-12 max-w-5xl mx-auto">
           {/* Static QR Codes Box */}
-          <div className="flex-1 bg-gradient-to-l from-[#3A86FF] via-[#ffffff] to-[#3A86FF] p-8 rounded-3xl shadow-lg" style={{
-            backgroundImage: `
-            linear-gradient(to left, #3A86FF, #FFFFFF, #3A86FF),
-             url('/images/side-angle.svg')`,
-            backgroundBlendMode: 'overlay',
-            backgroundSize: 'contain',
-            backgroundRepeat: 'no-repeat',
-          }}>
+          <div className="flex-1 p-8 rounded-3xl shadow-lg custom-blur-panel-right">
             <h3 className="text-[18px] font-bold mb-6 text-[#1F2937] text-center">Static QR Codes</h3>
             <ul className="space-y-5 text-base text-gray-700">
               <li className="flex items-center gap-4">
@@ -157,14 +150,7 @@ const MidSection = () => {
           </div>
 
           {/* Dynamic QR Codes Box */}
-          <div className="flex-1 bg-gradient-to-l from-[#3A86FF] via-[#ffffff] to-[#3A86FF] p-8 rounded-3xl shadow-lg" style={{
-            backgroundImage: `
-            linear-gradient(to left, #3A86FF, #FFFFFF, #3A86FF),
-             url('/images/side-angle.svg')`,
-            backgroundBlendMode: 'overlay',
-            backgroundSize: 'contain',
-            backgroundRepeat: 'no-repeat',
-          }}>
+          <div className="flex-1 p-8 rounded-3xl relative overflow-hidden custom-blur-panel-left">
             <h3 className="text-[18px] font-bold mb-6 text-[#1F2937] text-center">Dynamic QR Codes</h3>
             <ul className="space-y-5 text-base text-gray-700">
               <li className="flex items-center gap-4">
