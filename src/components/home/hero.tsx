@@ -2,14 +2,16 @@ import React from 'react';
 
 const HeroSection: React.FC = () => {
     return (
-        <div className="bg-[#FFFFFF] min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div className="bg-[#FFFFFF] min-h-[70vh] flex items-center justify-center relative overflow-hidden">
 
 
 
             <div className="container mx-auto px-6 py-12 relative z-10">
                 <div className="text-center max-w-4xl mx-auto">
                     {/* Main Heading */}
-                    <h1 className="text-[48px] font-poppins font-bold mb-4 leading-tight">
+                    <img src="/images/highlighter.png" alt="QR Code" className="w-[500px] h-12 mx-auto bg-white flex items-center justify-center " />
+                    <h1 className="text-[48px] font-poppins font-bold mb-4 leading-tight absolute top-10 items-center justify-center right-80">
+                       
                         <span className="text-[#1F2937]">Editable. </span>
                         <span className="text-[#1F2937]">Trackable. </span>
                         <span className="text-[#1F2937]">

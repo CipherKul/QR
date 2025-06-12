@@ -1,15 +1,15 @@
 "use client";
 
 import React, { useState } from 'react';
-import { 
-  Link, 
-  MessageSquare, 
-  Mail, 
-  Calendar, 
-  Wifi, 
-  Type, 
-  CreditCard, 
-  Phone, 
+import {
+  Link,
+  MessageSquare,
+  Mail,
+  Calendar,
+  Wifi,
+  Type,
+  CreditCard,
+  Phone,
   User,
   Shield,
   ChevronLeft,
@@ -117,7 +117,7 @@ const QRGeneratorInterface: React.FC = () => {
               <ChevronLeft className="w-5 h-5 mr-1" />
               Previous
             </button>
-            
+
             <div className="flex items-center space-x-4">
               {steps.map((step, index) => (
                 <div key={step.number} className="flex items-center">
@@ -131,7 +131,7 @@ const QRGeneratorInterface: React.FC = () => {
                 </div>
               ))}
             </div>
-            
+
             <button className="flex items-center text-[#3A86FF] hover:text-blue-700 transition-colors">
               Next
               <ChevronRight className="w-5 h-5 ml-1" />
@@ -147,11 +147,10 @@ const QRGeneratorInterface: React.FC = () => {
                 <div
                   key={option.id}
                   onClick={() => setSelectedOption(option.id)}
-                  className={`bg-white rounded-[10px] p-3 cursor-pointer transition-all duration-200 hover:shadow-lg hover:scale-105 ${
-                    selectedOption === option.id ? 'ring-2 ring-[#3A86FF] shadow-lg' : 'shadow-md'
-                  }`}
+                  className={`bg-white rounded-[10px] p-3 cursor-pointer transition-all duration-200 hover:shadow-lg hover:scale-105 ${selectedOption === option.id ? 'ring-2 ring-[#3A86FF] shadow-lg' : 'shadow-md'
+                    }`}
                 >
-                  <div className="flex items-start space-x-2">
+                  <div className="flex items-start space-x-2 space-y-0">
                     <div className={`${option.color} text-white p-1.5 mt-2 ml-4 rounded-full flex-shrink-0`}>
                       {option.icon}
                     </div>
@@ -171,44 +170,18 @@ const QRGeneratorInterface: React.FC = () => {
 
           {/* Right Section - QR Preview */}
           <div className="lg:col-span-1 mt-6">
-            
-              <div className="text-center">
-                {/* QR Code Preview */}
-                <div className="bg-gray-50 rounded-lg p-8 mb-6">
-                  <div className="w-64 h-64 mx-auto bg-white rounded-lg shadow-inner flex items-center justify-center">
-                    {/* QR Code Pattern */}
-                    <div className="w-48 h-48 bg-black rounded-lg relative overflow-hidden">
-                      <div className="absolute inset-0 grid grid-cols-8 gap-1 p-2">
-                        {[...Array(64)].map((_, i) => (
-                          <div
-                            key={i}
-                            className={`${
-                              Math.random() > 0.5 ? 'bg-black' : 'bg-white'
-                            } rounded-sm`}
-                          />
-                        ))}
-                      </div>
-                     
-                      </div>
-                      <div className="absolute top-2 right-2 w-8 h-8 bg-black rounded border-2 border-white">
-                        <div className="w-4 h-4 bg-white rounded m-1">
-                          <div className="w-2 h-2 bg-black rounded m-1"></div>
-                        </div>
-                      </div>
-                      <div className="absolute bottom-2 left-2 w-8 h-8 bg-black rounded border-2 border-white">
-                        <div className="w-4 h-4 bg-white rounded m-1">
-                          <div className="w-2 h-2 bg-black rounded m-1"></div>
-                        </div>
-                      </div>
-                </div>
-              </div>
+
+            <div className="text-center relative mr-4 mt-10">
+              {/* QR Code Preview */}
+              <img src="/images/qr-code.svg" alt="QR Code" className="w-72 h-72 mx-auto bg-white rounded-lg shadow-inner flex items-center justify-center" />
+
               {/* Format Selection */}
-              <div className="mb-6">
-                  <button className="w-full bg-[#3A86FF] hover:bg-blue-600 text-white py-2 px-4 rounded-lg font-medium transition-colors flex items-center justify-center">
-                    Format: PNG
-                    <ChevronRight className="w-4 h-4 ml-2" />
-                  </button>
-                </div>
+              <div className="mb-6 mt-10 absolute top-70 left-0">
+                <button className="w-[285px] bg-[#3A86FF] hover:bg-blue-600 text-white py-2 px-6 rounded-[10px] font-medium transition-colors flex items-center justify-center">
+                  Format: PNG
+                  <ChevronRight className="w-5 h-5 ml-8" />
+                </button>
+              </div>
             </div>
           </div>
         </div>
